@@ -1,0 +1,11 @@
+dartdoc:
+  categories:
+    "Async":
+      markdown: doc/async.md
+    "Material Design 1":
+      markdown: doc/m1.md
+    "Material Design 3":
+      markdown: doc/m3.md
+    "Utilities":
+      markdown: doc/utils.md
+  showUndocumentedCategories: true
