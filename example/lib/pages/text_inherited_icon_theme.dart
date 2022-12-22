@@ -10,6 +10,7 @@ class TextInheritedIconThemePage extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text(
             "TextInheritedIconTheme",

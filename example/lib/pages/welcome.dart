@@ -13,7 +13,7 @@ class WelcomePage extends StatelessWidget {
           children: [
             Text(
               "Welcome to Kaiteki Material",
-              style: Theme.of(context).textTheme.displaySmall,
+              style: Theme.of(context).textTheme.headline6,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),

@@ -43,7 +43,7 @@ class DeviceFrame extends StatelessWidget {
           aspectRatio: aspectRatio,
           child: ColoredBox(
             color: Theme.of(context).colorScheme.background,
-            child: child,
+            child: ClipRect(child: child),
           ),
         ),
       ),

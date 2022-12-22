@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  flutter_markdown: ^0.6.13
   kaiteki_material:
     path: ..
   google_fonts: ^3.0.1
@@ -23,3 +24,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/img/
+    - assets/md/m2/drawer.md
+    - assets/md/m3/drawer.md

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kaiteki_material/src/m3/badge_theme.dart';
+import 'package:kaiteki_material/src/material/badge_theme.dart';
 
 const _smallBadgeBorderRadius = BorderRadius.all(Radius.circular(6.0));
 const _largeBadgeBorderRadius = BorderRadius.all(Radius.circular(16.0));
