@@ -114,6 +114,7 @@ class MainSwitchListTile extends StatelessWidget implements SwitchListTile {
     this.title,
     this.visualDensity,
     this.margin,
+    this.onFocusChange,
   });
 
   @override
@@ -168,7 +169,11 @@ class MainSwitchListTile extends StatelessWidget implements SwitchListTile {
         title: title,
         value: value,
         visualDensity: visualDensity,
+        onFocusChange: onFocusChange,
       ),
     );
   }
+
+  @override
+  final ValueChanged<bool>? onFocusChange;
 }

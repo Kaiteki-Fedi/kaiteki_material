@@ -128,6 +128,8 @@ class DrawerListTile extends StatelessWidget implements ListTile {
     this.trailing,
     this.visualDensity,
     this.margin,
+    this.onFocusChange,
+    this.splashColor,
   });
 
   @override
@@ -213,4 +215,10 @@ class DrawerListTile extends StatelessWidget implements ListTile {
       textColor: color,
     );
   }
+
+  @override
+  final ValueChanged<bool>? onFocusChange;
+
+  @override
+  final Color? splashColor;
 }

@@ -89,7 +89,7 @@ class _M1BottomNavigationState extends State<M1BottomNavigation> {
                                   Text(
                                     "New Releases",
                                     style:
-                                        Theme.of(context).textTheme.headline6,
+                                        Theme.of(context).textTheme.titleLarge,
                                   ),
                                   const Spacer(),
                                   TextButton(
@@ -125,7 +125,7 @@ class _M1BottomNavigationState extends State<M1BottomNavigation> {
                                                     "Title",
                                                     style: Theme.of(context)
                                                         .textTheme
-                                                        .subtitle1,
+                                                        .titleMedium,
                                                   ),
                                                   const SizedBox(height: 8),
                                                   const Text("Genre"),
@@ -173,14 +173,14 @@ class _M1BottomNavigationState extends State<M1BottomNavigation> {
                                                     "Title",
                                                     style: Theme.of(context)
                                                         .textTheme
-                                                        .headline5,
+                                                        .headlineSmall,
                                                   ),
                                                   const SizedBox(height: 8),
                                                   Text(
                                                     "Author",
                                                     style: Theme.of(context)
                                                         .textTheme
-                                                        .bodyText2,
+                                                        .bodyMedium,
                                                   ),
                                                 ],
                                               ),

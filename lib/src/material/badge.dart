@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Badge, BadgeTheme;
 import 'package:kaiteki_material/src/material/badge_theme.dart';
 
 const _smallBadgeBorderRadius = BorderRadius.all(Radius.circular(6.0));

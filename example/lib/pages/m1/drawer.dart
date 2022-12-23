@@ -112,10 +112,10 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                         title: Text(
                           "Labels",
                           style:
-                              Theme.of(context).textTheme.bodyText1!.copyWith(
+                              Theme.of(context).textTheme.bodyLarge!.copyWith(
                                     color: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyLarge!
                                         .color!
                                         .withOpacity(.54),
                                   ),
@@ -156,7 +156,7 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                           children: [
                             TextSpan(
                               text: "Ali Connors",
-                              style: Theme.of(context).textTheme.bodyText2,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             const TextSpan(
                                 text:
@@ -178,7 +178,7 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                             const TextSpan(text: "Summer BBQ"),
                             TextSpan(
                               text: " 4",
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),
@@ -190,7 +190,7 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                           children: [
                             TextSpan(
                               text: "to Alex, Scott, Jennifer",
-                              style: Theme.of(context).textTheme.bodyText2,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             const TextSpan(
                               text:
@@ -213,7 +213,7 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                           children: [
                             TextSpan(
                               text: "Sandra Adams",
-                              style: Theme.of(context).textTheme.bodyText2,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             const TextSpan(
                               text:
@@ -236,7 +236,7 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                           children: [
                             TextSpan(
                               text: "Trevor Hansen",
-                              style: Theme.of(context).textTheme.bodyText2,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             const TextSpan(
                               text:
@@ -259,7 +259,7 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                           children: [
                             TextSpan(
                               text: "Britta Holt",
-                              style: Theme.of(context).textTheme.bodyText2,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             const TextSpan(
                               text:
@@ -282,7 +282,7 @@ class _M1DrawerPageState extends State<M1DrawerPage> {
                           children: [
                             TextSpan(
                               text: "David Park",
-                              style: Theme.of(context).textTheme.bodyText2,
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                             const TextSpan(
                               text:
