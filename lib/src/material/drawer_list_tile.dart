@@ -97,6 +97,15 @@ class DrawerListTile extends StatelessWidget implements ListTile {
 
   final EdgeInsets? margin;
 
+  @override
+  final TextStyle? titleTextStyle;
+
+  @override
+  final TextStyle? subtitleTextStyle;
+
+  @override
+  final TextStyle? leadingAndTrailingTextStyle;
+
   const DrawerListTile({
     super.key,
     this.autofocus = false,
@@ -130,6 +139,9 @@ class DrawerListTile extends StatelessWidget implements ListTile {
     this.margin,
     this.onFocusChange,
     this.splashColor,
+    this.titleTextStyle,
+    this.subtitleTextStyle,
+    this.leadingAndTrailingTextStyle,
   });
 
   @override
