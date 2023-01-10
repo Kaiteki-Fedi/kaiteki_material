@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// {@category Material Design 3}
+@Deprecated("Use Flutter's BadgeTheme instead.")
 class BadgeTheme extends ThemeExtension<BadgeTheme> {
   final Color? containerColor;
   final Color? contentColor;
