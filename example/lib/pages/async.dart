@@ -25,9 +25,14 @@ class AsyncPage extends StatelessWidget {
             child: TabBarView(
               children: [
                 Center(
-                  child: AsyncButton(
+                  child: AsyncButton.progress(
                     child: const Text("Click me"),
-                    onPressed: () => Future.delayed(const Duration(seconds: 5)),
+                    onPressed: () async* {
+                      for (var i = 0; i < 10; i++) {
+                        await Future.delayed(const Duration(seconds: 1));
+                        yield i / 10;
+                      }
+                    },
                   ),
                 ),
                 _AsyncBlockWidgetExample(),
