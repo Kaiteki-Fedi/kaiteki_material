@@ -130,6 +130,9 @@ class DrawerListTile extends StatelessWidget implements ListTile {
     this.margin,
     this.onFocusChange,
     this.splashColor,
+    this.leadingAndTrailingTextStyle,
+    this.subtitleTextStyle,
+    this.titleTextStyle,
   });
 
   @override
@@ -171,6 +174,11 @@ class DrawerListTile extends StatelessWidget implements ListTile {
         selectedColor: iconColor,
         style: ListTileStyle.drawer,
         trailing: trailing,
+        splashColor: splashColor,
+        onFocusChange: onFocusChange,
+        leadingAndTrailingTextStyle: leadingAndTrailingTextStyle,
+        subtitleTextStyle: subtitleTextStyle,
+        titleTextStyle: titleTextStyle,
       );
     }
 
@@ -221,4 +229,13 @@ class DrawerListTile extends StatelessWidget implements ListTile {
 
   @override
   final Color? splashColor;
+
+  @override
+  final TextStyle? leadingAndTrailingTextStyle;
+
+  @override
+  final TextStyle? subtitleTextStyle;
+
+  @override
+  final TextStyle? titleTextStyle;
 }
