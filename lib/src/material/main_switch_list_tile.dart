@@ -115,7 +115,6 @@ class MainSwitchListTile extends StatelessWidget implements SwitchListTile {
     this.visualDensity,
     this.margin,
     this.onFocusChange,
-    this.trackOutlineColor,
   });
 
   @override
@@ -171,14 +170,10 @@ class MainSwitchListTile extends StatelessWidget implements SwitchListTile {
         value: value,
         visualDensity: visualDensity,
         onFocusChange: onFocusChange,
-        trackOutlineColor: trackOutlineColor,
       ),
     );
   }
 
   @override
   final ValueChanged<bool>? onFocusChange;
-
-  @override
-  final MaterialStateProperty<Color?>? trackOutlineColor;
 }
