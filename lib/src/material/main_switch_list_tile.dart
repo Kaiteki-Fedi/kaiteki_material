@@ -9,82 +9,34 @@ import 'package:flutter/material.dart';
 /// See also:
 ///
 ///  * [MainSwitchBar from the Android Open Source Project](https://cs.android.com/android/platform/superproject/+/master:frameworks/base/packages/SettingsLib/MainSwitchPreference/src/com/android/settingslib/widget/MainSwitchBar.java)
-class MainSwitchListTile extends StatelessWidget implements SwitchListTile {
-  @override
-  final Color? activeColor;
-
-  final Color? activeTileColor;
-
-  @override
-  final Color? tileColor;
-
-  @override
-  final ValueChanged<bool>? onChanged;
-
-  @override
-  final bool value;
-
-  @override
-  final Widget? title;
-
-  @override
-  final EdgeInsets? contentPadding;
-
-  @override
-  final ImageProvider<Object>? activeThumbImage;
-
-  @override
-  final Color? activeTrackColor;
-
-  @override
+class MainSwitchListTile extends StatelessWidget {
   final bool autofocus;
-
-  @override
-  final ListTileControlAffinity controlAffinity;
-
-  @override
-  final bool? dense;
-
-  @override
-  final bool? enableFeedback;
-
-  @override
-  final FocusNode? focusNode;
-
-  @override
-  final Color? hoverColor;
-
-  @override
-  final Color? inactiveThumbColor;
-
-  @override
-  final ImageProvider<Object>? inactiveThumbImage;
-
-  @override
-  final Color? inactiveTrackColor;
-
-  @override
   final bool isThreeLine;
-
-  @override
-  final Widget? secondary;
-
-  @override
   final bool selected;
-
-  @override
+  final bool value;
+  final bool? dense;
+  final bool? enableFeedback;
+  final Color? activeColor;
+  final Color? activeTileColor;
+  final Color? activeTrackColor;
+  final Color? hoverColor;
+  final Color? inactiveThumbColor;
+  final Color? inactiveTrackColor;
   final Color? selectedTileColor;
-
-  @override
-  final ShapeBorder? shape;
-
-  @override
-  final Widget? subtitle;
-
-  @override
-  final VisualDensity? visualDensity;
-
+  final Color? tileColor;
+  final EdgeInsets? contentPadding;
   final EdgeInsets? margin;
+  final FocusNode? focusNode;
+  final ImageProvider<Object>? activeThumbImage;
+  final ImageProvider<Object>? inactiveThumbImage;
+  final ListTileControlAffinity controlAffinity;
+  final ShapeBorder? shape;
+  final ValueChanged<bool>? onChanged;
+  final VisualDensity? visualDensity;
+  final Widget? secondary;
+  final Widget? subtitle;
+  final Widget? title;
+  final ValueChanged<bool>? onFocusChange;
 
   const MainSwitchListTile({
     super.key,
@@ -115,7 +67,6 @@ class MainSwitchListTile extends StatelessWidget implements SwitchListTile {
     this.visualDensity,
     this.margin,
     this.onFocusChange,
-    this.trackOutlineColor,
   });
 
   @override
@@ -171,14 +122,7 @@ class MainSwitchListTile extends StatelessWidget implements SwitchListTile {
         value: value,
         visualDensity: visualDensity,
         onFocusChange: onFocusChange,
-        trackOutlineColor: trackOutlineColor,
       ),
     );
   }
-
-  @override
-  final ValueChanged<bool>? onFocusChange;
-
-  @override
-  final MaterialStateProperty<Color?>? trackOutlineColor;
 }

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kaiteki_material/src/utils/margined_rounded_rectangle_border.dart';
 import 'package:kaiteki_material/src/utils/margined_stadium_border.dart';
 
-class DrawerListTile extends StatelessWidget implements ListTile {
-  @override
+@Deprecated("Use Flutter's NavigationDrawer instead.")
+class DrawerListTile extends StatelessWidget {
   final bool autofocus;
 
   /// The tile's internal padding.
@@ -14,85 +14,58 @@ class DrawerListTile extends StatelessWidget implements ListTile {
   /// If null, `EdgeInsets.only(right: 12.0)` is used.
   /// `EdgeInsets.symmetric(horizontal: 24, vertical: 4)` is being added too,
   /// which can be subtracted by using negative numbers.
-  @override
   final EdgeInsetsGeometry? contentPadding;
 
-  @override
   final bool? dense;
 
-  @override
   final bool? enableFeedback;
 
-  @override
   final bool enabled;
 
-  @override
   final Color? focusColor;
 
-  @override
   final FocusNode? focusNode;
 
-  @override
   final double? horizontalTitleGap;
 
-  @override
   final Color? hoverColor;
 
-  @override
   final Color? iconColor;
 
-  @override
   final bool isThreeLine;
 
-  @override
   final Widget? leading;
 
-  @override
   final double? minLeadingWidth;
 
-  @override
   final double? minVerticalPadding;
 
-  @override
   final MouseCursor? mouseCursor;
 
-  @override
   final GestureLongPressCallback? onLongPress;
 
-  @override
   final GestureTapCallback? onTap;
 
-  @override
   final bool selected;
 
-  @override
   final Color? selectedColor;
 
-  @override
   final Color? selectedTileColor;
 
-  @override
   final ShapeBorder? shape;
 
-  @override
   final ListTileStyle? style;
 
-  @override
   final Widget? subtitle;
 
-  @override
   final Color? textColor;
 
-  @override
   final Color? tileColor;
 
-  @override
   final Widget? title;
 
-  @override
   final Widget? trailing;
 
-  @override
   final VisualDensity? visualDensity;
 
   final EdgeInsets? margin;
@@ -224,10 +197,8 @@ class DrawerListTile extends StatelessWidget implements ListTile {
     );
   }
 
-  @override
   final ValueChanged<bool>? onFocusChange;
 
-  @override
   final Color? splashColor;
 
   @override
